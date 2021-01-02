@@ -1,0 +1,377 @@
+* {
+  font-family: 'Montserrat Alternates', sans-serif;
+  box-sizing: border-box;
+}
+
+/* =============Base Element Styles =============== */
+
+body {
+  text-align: center;
+  background-color: #faf9f9;
+  color:#3d3d3d;
+  max-width: 1024px;
+  margin: auto;
+}
+
+section {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+h3 {
+  margin-top: 20px;
+  margin-bottom: 15px;
+  font-family: 'Open Sans', sans-serif;  
+}
+
+p {
+  font-family: 'Open Sans', sans-serif;
+  width: 90%;
+  margin: auto;
+  margin-bottom: 40px;
+}
+
+footer {
+  background-color:#daeaf0;
+  padding: 10px 0 10px 0;
+  color:#686767;
+}
+
+header a {
+  text-decoration: none;
+  display: block;
+  color:#fff;
+}
+
+header a:hover {
+  transform: scale(0.9);
+}
+
+header a:visited {
+  color:#fff;
+}
+
+.container a {
+  color: #3d3d3d;
+  text-decoration: none;
+}
+
+.container a:visited {
+  color: #3d3d3d;  
+}
+
+
+/* =================Base Layout Styles =============== */
+.title {
+  margin-top: 10px;
+}
+.main-header li {
+  background-color:#bebdbd;
+  margin: 10px;
+  padding: 15px;
+  font-weight: 800;
+  color: #fff;
+  text-shadow: 2px 2px 5px #616060;
+}
+
+.introduction {
+  background-color: #daeaf0;
+  padding-top: 50px;
+  padding-bottom: 10px;
+}
+
+.introduction h3 {
+  margin-top: -20px;
+}
+
+
+.aboutMe {
+  font-size: 1.2rem;
+  line-height: 1.7em;  
+  margin-top: 30px;
+}
+
+
+
+.skills {
+  width: 90%;
+  margin: auto;
+  padding-bottom: 20px;
+  margin-bottom: 80px;
+}
+
+.skills ul {
+  display: flex;
+  justify-content: space-around;
+  border-style: double;
+  padding: 30px;
+  font-size: 0.9em;
+}
+
+.skills ul:hover {
+  background-color: #daeaf0;
+  transform:scale(1.1);
+  font-weight: bold;
+}
+
+
+.portfolio img {
+  width: 85%;
+}
+
+.portfolio-6 {
+  margin-bottom: 70px;
+}
+
+
+/* footer */
+.heading {
+  margin: 60px 0;
+  text-decoration: underline;  
+  padding-top: 1px;
+}
+
+.my-contact {
+  margin-bottom: 20px;
+}
+
+.my-contact span {
+  font-weight: bold;
+}
+
+.h-line {
+  border-top: 1px solid #bebdbd;
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+  padding-top: 40px;
+  font-weight: bold;
+  margin: auto;    
+}
+
+.h-line p:first-child {
+  width: 60%;
+  margin-left: 0;
+  text-align: left;
+  font-family: 'Montserrat Alternates', sans-serif;  
+}
+
+.h-line p:last-child {
+  margin-right: 0;
+  text-align: right;
+  width: 70%;
+}
+
+.h-line a {
+  color:#686767;
+}
+
+.emailing {
+  padding-bottom: 30px;
+}
+
+.mobileMode {
+  text-align: right;
+}
+
+.tabletMode {
+  display: none;
+}
+
+
+
+/* =================Media Queries==================== */
+/* /////////////////////////////////////////////////// */
+
+/* ===== Tablet min-width 768px ===== */
+@media (min-width:768px) {
+
+  /* ==========header section ============== */
+
+  .main-header {
+    background-color: #daeaf0;
+    padding: 40px 20px 50px 20px;
+  }
+
+  .main-header li {
+    margin-bottom: 0;
+    display: inline-block;
+    background-color: #daeaf0;
+    padding-bottom: 0;
+  }
+
+  .main-header a {
+    display: block;
+    
+    text-shadow: 2px 2px 5px #eeeeee;
+  }
+
+  .main-header a:hover {
+    transform: scale(1.2);
+ }
+
+  .main-header a:active {
+    color: #bebdbd;
+  }  
+
+  .main-header nav li a {
+    color: #3d3d3d;
+  }
+
+  /* ==========Main container section ================ */ 
+
+  .skills {
+    width: 90%;
+    margin-top: 80px;
+    border-top: 1px solid #bebdbd;
+    padding-top: 30px;
+  }
+
+  .skills ul:hover {
+    background-color: #fff;
+  }
+  .container .portfolios {
+    padding: 20px;
+    margin: auto;
+    width: 50%;
+  }
+  /* introduction */
+  .introduction {
+    margin-top: 0;
+    padding: 35px;
+    padding-top: 0;
+    background-color: #daeaf0;
+  }
+
+  .introduction h3 {
+    text-align: left;
+    padding-top: 20px;
+    text-decoration: underline;
+
+  }
+
+  .introduction img {
+    /* display: inline-block; */
+    width: 45%;
+  }
+  .aboutMe {
+    width: 50%;
+    float: left;
+    text-align: left;
+    margin-top: 0;
+    margin-right: 5px;
+  } 
+
+  /* portfolio */    
+  .portfolios {
+    float: left;
+    padding: 5px;
+    width: 50%;
+    height: 420px;
+  } 
+
+  .portfolios img {
+    display: block;
+    width: 100%;
+  }
+
+  a.port-link .portfolios:hover {
+    transform: scale(0.9);
+  }  
+
+  /* footer */
+
+  .contactMe {
+    width: 50%;
+  }
+
+  .mobileMode {
+    display: none;
+  }
+
+  .tabletMode {
+    width: 30%;
+    display: flex;
+    justify-content: space-between;
+  }  
+
+  /* clear floats */
+  .clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+}
+
+/* ///////////////////////////////////////////// */
+
+/* === Desktop min-width 1024px  ===*/
+ @media(min-width: 1024px) { 
+
+  body {
+    background-color:#daeaf0;
+  }
+
+  /* =====Header Section ============= */
+  header {
+    width: 90%;
+    margin: auto;    
+  }
+
+  nav {
+    text-align: right;    
+  }  
+
+  .title {
+    float: left;
+    padding-left: 15px;
+  }
+
+  .main-header li a {
+    color:#3d3d3d;
+    font-size: 0.92em;
+  }
+
+  /* ======Main Container Section=============== */
+  .container {
+    width: 90%;
+    margin: auto;
+  }
+
+  .portfolio {
+    background-color: #fff;
+    padding-top: 50px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  .portfolios {
+    /* float:left; */
+    max-width: 33.333%;
+    max-height: 500px;
+    padding: 5px;
+
+  }
+
+  .portfolios a:hover {
+    transform: scale(1.1);
+  }
+  
+
+  /* =========== footer section ======== */
+  .heading {
+    margin-top: 0;
+  }    
+
+  .emailing {
+    padding-bottom: 40px;
+  } 
+
+  .clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+} 
